@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using PersonalFinancePlatform;
 
-namespace PersonalFinancePlatform.Controllers
+namespace PersonalFinancePlatformAPI.Presentation.Controllers
 {
     [ApiController]
     [Route("[controller]")]

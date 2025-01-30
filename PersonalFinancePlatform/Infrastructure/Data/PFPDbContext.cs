@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PersonalFinancePlatformAPI.Models;
+using PersonalFinancePlatformAPI.Entities;
 using System.Collections.Generic;
 
-namespace PersonalFinancePlatformAPI.Data
+namespace PersonalFinancePlatformAPI.Infrastructure.Data
 {
     public class PFPDbContext : DbContext
     {

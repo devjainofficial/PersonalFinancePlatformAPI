@@ -1,5 +1,5 @@
-using PersonalFinancePlatformAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using PersonalFinancePlatformAPI.Infrastructure.Data;
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 

@@ -3,17 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PersonalFinancePlatformAPI.Data;
+using PersonalFinancePlatformAPI.Infrastructure.Data;
 
 #nullable disable
 
 namespace PersonalFinancePlatformAPI.Migrations
 {
     [DbContext(typeof(PFPDbContext))]
-    partial class PFPDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250107174614_Initial Setup")]
+    partial class InitialSetup
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
